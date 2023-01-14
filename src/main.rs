@@ -14,7 +14,7 @@ fn main() {
         let choice: u8 = match choice.trim().parse() {
             Ok(num) => num,
             Err(_) => {
-                println!("\nInsert a valid option\n");
+                println!("\n=================================\nError: Insert a valid option\n=================================\n");
                 continue;
             }
         };
@@ -30,7 +30,7 @@ fn main() {
         let number: u64 = match number.trim().parse() {
             Ok(num) => num,
             Err(_) => {
-                println!("\nInsert a valid number\n");
+                println!("\n=================================\nError: Insert a valid number\n=================================\n");
                 continue;
             }
         };
